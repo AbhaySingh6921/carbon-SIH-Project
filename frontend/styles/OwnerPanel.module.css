@@ -1,0 +1,62 @@
+/* FILE: components/OwnerPanel.module.css */
+
+.owner-panel {
+    background-color: #f8f9fa; /* light grey background */
+    border: 1px solid #dee2e6; /* subtle border */
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.owner-panel h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #343a40;
+}
+
+.owner-panel p {
+    font-size: 0.95rem;
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+.owner-panel input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+.owner-panel input[type="text"]:focus {
+    outline: none;
+    border-color: #495057;
+    box-shadow: 0 0 0 2px rgba(73, 80, 87, 0.2);
+}
+
+.owner-panel button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.owner-panel button:hover {
+    background-color: #0056b3;
+}
+
+.owner-panel button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}

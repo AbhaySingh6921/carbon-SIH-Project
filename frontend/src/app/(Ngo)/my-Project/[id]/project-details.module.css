@@ -1,0 +1,128 @@
+/* Page container */
+.pageContainer {
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #111827;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Back link */
+.backLink {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.statusTag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+/* Status colors */
+.submitted {
+  background-color: #f59e0b;
+}
+
+.aiverified {
+  background-color: #3b82f6;
+}
+
+.adminverified {
+  background-color: #10b981;
+}
+
+.survivalverified {
+  background-color: #047857;
+}
+
+.disputed {
+  background-color: #f43f5e;
+}
+
+.rejected {
+  background-color: #b91c1c;
+}
+
+/* Description */
+.description {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* Details Grid */
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Detail Cards */
+.detailCard {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.detailCard h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.detailCard p {
+  font-size: 0.875rem;
+  color: #111827;
+  word-break: break-all;
+}
+
+/* Full width card (IPFS Proof) */
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+/* IPFS Link */
+.ipfsLink {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Address style */
+.address {
+  font-family: monospace;
+  color: #374151;
+  font-size: 0.875rem;
+  word-break: break-all;
+}
+
+/* Centered message for loading / errors */
+.centeredMessage {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  color: #6b7280;
+}

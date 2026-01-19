@@ -1,0 +1,128 @@
+/* Page container */
+.pageContainer {
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #111827;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+/* Submit Button */
+.submitButton {
+  background-color: #10b981;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #059669;
+}
+
+/* Table */
+.tableContainer {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.projectTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 600px;
+}
+
+.projectTable th,
+.projectTable td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.projectTable th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+.projectTable td {
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.detailsLink {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Status Tags */
+.statusTag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+/* Status colors */
+.submitted {
+  background-color: #f59e0b;
+}
+
+.aiverified {
+  background-color: #3b82f6;
+}
+
+.adminverified {
+  background-color: #10b981;
+}
+
+.survivalverified {
+  background-color: #047857;
+}
+
+.disputed {
+  background-color: #f43f5e;
+}
+
+.rejected {
+  background-color: #b91c1c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .submitButton {
+    width: 100%;
+    text-align: center;
+  }
+}

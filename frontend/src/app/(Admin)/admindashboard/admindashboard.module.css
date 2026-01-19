@@ -1,0 +1,228 @@
+.pageContainer {
+  padding: 2rem;
+  background: #f9fafb;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: #111827;
+}
+
+/* ===== Header ===== */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+/* ===== Stats Grid ===== */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+/* ===== Main Grid ===== */
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* ===== Card ===== */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+/* ===== Table ===== */
+.queueTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.queueTable th,
+.queueTable td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.queueTable th {
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.queueTable tr:hover {
+  background: #f9fafb;
+}
+
+/* ===== Address Styling ===== */
+.addressCell {
+  font-size: 0.8rem;
+  color: #6b7280;
+  word-break: break-all;
+}
+
+/* ===== Status Tags ===== */
+.statusTag {
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* Status Colors */
+.statusTag.submitted {
+  background: #fef9c3;
+  color: #a16207;
+}
+
+.statusTag.aiverified {
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.statusTag.adminverified {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.statusTag.survivalverified {
+  background: #bbf7d0;
+  color: #166534;
+}
+
+.statusTag.disputed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.statusTag.rejected {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+/* ===== Weather Score ===== */
+.scoreButton {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: 0.2s ease;
+}
+
+.scoreButton:hover {
+  background: #1d4ed8;
+}
+
+.scoreButton:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.smallScore {
+  font-size: 0.8rem;
+  color: #2563eb;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+/* ===== Review Button ===== */
+.reviewButton {
+  background: #10b981;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.reviewButton:hover {
+  background: #059669;
+}
+
+/* ===== Centered Messages ===== */
+.centeredMessage,
+.authMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.centeredMessage {
+  color: #4b5563;
+}
+
+.authMessage h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.authMessage p {
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .pageContainer {
+    padding: 1rem;
+  }
+
+  .queueTable th,
+  .queueTable td {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,16 @@
+[profile.default]
+src = "src"
+out = "out"
+solc_version = "0.8.24"
+libs = ["lib"]
+remappings = [
+    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+    "forge-std/=lib/forge-std/src/",
+    "@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/"
+]
+fs_permissions = [
+  { access = "read", path = "./" }
+]
+
+[etherscan]
+sepolia = { key = "WAT4K6K187Y61IG6I7Q5R6JK8W82R7G626" }

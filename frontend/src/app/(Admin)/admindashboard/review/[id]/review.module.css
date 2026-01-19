@@ -1,0 +1,139 @@
+.pageContainer {
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: #f9fafb;
+  color: #111827;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* ===== Grid Layout ===== */
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.detailsCard,
+.actionsCard,
+.completedCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.detailsCard h2,
+.actionsCard h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* ===== Detail Items ===== */
+.detailItem {
+  margin-bottom: 0.85rem;
+}
+
+.detailItem span {
+  display: block;
+  font-weight: 500;
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.detailItem p {
+  font-size: 1rem;
+  color: #111827;
+  word-break: break-all;
+}
+
+.address {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  color: #2563eb;
+}
+
+/* ===== Actions Card ===== */
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.button {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease;
+}
+
+.approveButton {
+  background: #10b981;
+  color: white;
+}
+
+.approveButton:hover {
+  background: #059669;
+}
+
+.rejectButton {
+  background: #ef4444;
+  color: white;
+}
+
+.rejectButton:hover {
+  background: #b91c1c;
+}
+
+.pendingText {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* ===== Completed Card ===== */
+.completedCard {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.completedText {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+/* ===== Centered Loading / Access Messages ===== */
+.centeredMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}

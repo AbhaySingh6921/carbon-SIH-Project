@@ -1,0 +1,19 @@
+{
+  "name": "chainlink-bot",
+  "version": "1.0.0",
+  "main": "Trigger.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@chainlink/functions-toolkit": "^0.3.2",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.15.0",
+    "node-fetch": "^3.3.2"
+  }
+}

@@ -1,0 +1,151 @@
+/* FILE: app/home.module.css */
+.pageContainer {
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #f7fafc;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- Main Two-Column Grid --- */
+.mainContent {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to single column on mobile */
+    gap: 2.5rem;
+    padding: 2.5rem;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Switch to two columns on larger screens */
+@media (min-width: 1024px) {
+    .mainContent {
+        /* Map takes 2/3 of the space, sidebar takes 1/3 */
+        grid-template-columns: 2fr 1fr; 
+    }
+}
+
+.mapColumn, .sidebarColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Map Styles --- */
+.mapWrapper {
+    height: 80vh; /* Make map taller */
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    position: relative;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+}
+
+.loadingOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f7fafc;
+    border-radius: 12px;
+    color: #4a5568;
+}
+
+.popupContent h3 { margin: 0 0 10px 0; }
+.popupContent p { margin: 5px 0; }
+
+/* --- Sidebar Column Styles --- */
+.sidebarColumn {
+    gap: 2rem; /* Space between stats panel and project list */
+}
+
+/* --- Stats Panel Styles --- */
+.statsPanel {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.statItem { text-align: center; }
+.statValue { display: block; font-size: 2.25rem; font-weight: 700; color: #3182ce; }
+.statLabel { display: block; font-size: 0.9rem; color: #4a5568; }
+
+
+/* --- Project List Styles --- */
+.projectListPanel {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    flex-grow: 1; /* Allow this panel to fill remaining space */
+    display: flex;
+    flex-direction: column;
+}
+
+.projectList {
+    overflow-y: auto; /* Make the list scrollable */
+    flex-grow: 1;
+    padding-right: 10px; /* Space for scrollbar */
+}
+
+.projectItem {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+.projectItem:last-child {
+    border-bottom: none;
+}
+.projectItem:hover {
+    background-color: #f7fafc;
+}
+
+.projectId {
+    font-weight: 600;
+    color: #2d3748;
+    display: block;
+}
+.projectSpecies {
+    font-size: 0.9rem;
+    color: #718096;
+}
+

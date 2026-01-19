@@ -1,0 +1,77 @@
+/* layout.module.css */
+
+/* Overall layout container */
+.appLayout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  background-color: #f9fafb; /* light gray background */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  min-width: 250px;
+  background-color: #111827; /* dark sidebar */
+  color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* Main page content */
+.pageContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f9fafb;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Optional: Navbar container */
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #1f2937; /* dark navbar */
+  color: #f9fafb;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Example responsive adjustments */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+    min-width: 200px;
+    padding: 0.75rem;
+  }
+
+  .pageContent {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .appLayout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .pageContent {
+    padding: 0.5rem;
+  }
+}

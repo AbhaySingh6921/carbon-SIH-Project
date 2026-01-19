@@ -1,0 +1,149 @@
+/* General page styling */
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #111827;
+  font-family: 'Inter', sans-serif;
+}
+
+.authMessage {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+/* Stats Grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Quick actions */
+.quickActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.actionButton {
+  background-color: #10b981;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.actionButton:hover {
+  background-color: #059669;
+}
+
+.actionLink {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Recent Activity */
+.recentActivity {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.activityList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activityItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.activityItem:last-child {
+  border-bottom: none;
+}
+
+.activityDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectName {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.projectLocation {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Status tags */
+.statusTag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+/* Status colors */
+.submitted {
+  background-color: #f59e0b;
+}
+
+.aiverified {
+  background-color: #3b82f6;
+}
+
+.adminverified {
+  background-color: #10b981;
+}
+
+.survivalverified {
+  background-color: #047857;
+}
+
+.disputed {
+  background-color: #f43f5e;
+}
+
+.rejected {
+  background-color: #b91c1c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .quickActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
